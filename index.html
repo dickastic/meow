@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Mini App</title>
-    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <title>Meow Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <h1>Hello from Mini App</h1>
-    <button id="sendData">Send Data to Bot</button>
+    <button id="sendData">Send Data</button>
     <script>
         document.getElementById('sendData').addEventListener('click', function() {
             Telegram.WebApp.sendData('Hello from Mini App');
