@@ -7,6 +7,9 @@
 <body>
     <button id="sendData">Send Data</button>
     <script>
+        // Notify Telegram that the app is ready.
+        Telegram.WebApp.ready();
+        
         document.getElementById('sendData').addEventListener('click', function() {
             Telegram.WebApp.sendData('Hello from Mini App');
         });
